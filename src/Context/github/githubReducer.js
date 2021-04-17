@@ -6,16 +6,19 @@ const handlers = {
     users: payload,
     loading: false,
   }),
+  
   [GET_REPOS]: (state, { payload }) => ({
     ...state,
     repos: payload,
     loading: false,
   }),
+
   [GET_USER]: (state, { payload }) => ({
     ...state,
     user: payload,
     loading: false,
   }),
+
   [SET_LOADING]: (state, { payload }) => ({
     ...state,
     loading: true,
